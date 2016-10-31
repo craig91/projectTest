@@ -1,0 +1,143 @@
+html{
+	/*margin: 0, auto;*/
+
+	}
+
+*{
+	font-family: 'Laila', serif;
+	box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+   /*background-size: cover;*/
+   /*background-color: black;*/
+   /*background-image: url(../images/code_back.jpg);*/
+   /*font-family: 'Concert One', cursive;*/
+   /*background-size: 100%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;*/
+
+}
+
+/****************** Header and Social Bar **********************/
+header{
+	position: relative;
+	width: 100%;
+	z-index: 3;
+	height: 100px;
+	padding: 1.25rem 0.625rem 1.25rem 0.625rem;
+}
+
+.social-bar {
+  margin-top: -70px;
+	float: right;
+}
+/****************** End of Header and Social Bar **********************/
+
+
+/****************** Video Div and Overlays ************************/
+.vid_back{
+	background-color: transparent;
+	width: 100%;
+	height: 500px;
+  position: relative;
+	overflow: hidden;
+}
+
+.overlay, video, .text{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+video{
+	z-index: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.overlay{
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.5);
+	height: 100%;
+}
+
+
+
+.text{
+	z-index: 2;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 25px;
+	color: white;
+	opacity: 0;
+}
+
+.text.show {
+	opacity: 1;
+	transition: opacity 5s;
+}
+
+/****************** End of Video Div & Overlays **********************/
+
+.headline{
+	text-align: center;
+	vertical-align: top;
+	padding-bottom: 15px;
+}
+
+.title{
+	font-size: 35px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: 200;
+	text-transform: none;
+	letter-spacing: 0.05em;
+	text-align: center;
+	vertical-align: top;
+
+}
+
+#hr {
+    width: 210px;
+    color: black;
+    background-color: black;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+section {
+	height: 890px;
+	padding-top: 50px;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+}
+
+#home{
+	background:
+	linear-gradient(
+		rgba(92, 27, 183, 0.5),
+		rgba(92, 27, 183, 0.5)
+
+	)
+	,url(../images/hello_world.jpg);
+}
+
+#nix{
+	background-image: url(../images/unix.png);
+}
+
+/*.sec-overlay{
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.5);
+	height: 890px;
+}*/
+
+
+
+/******************** Experience Row *******************/
